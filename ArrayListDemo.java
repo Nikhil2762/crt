@@ -21,10 +21,15 @@ public class ArrayListDemo {
     arrayList.add(20);
     index = arrayList.lastIndexOf(20); // NOTE: It Returns the Last Index of the element 20
     System.out.println(index);
+    boolean result = arrayList.contains(10); // NOTE: Contains returns boolean value as the result
+    System.out.println(result);
     System.out.println(arrayList);
+    int sum = 0;
     for (int value : arrayList) {
+      sum += value;
       System.out.println(value);
     }
+    System.out.println("Sum Of The Numbers : " + sum);
   }
 }
 // NOTE: Difference between Array and ArrayList
