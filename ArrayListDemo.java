@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListDemo {
   public static void main(String[] args) {
@@ -31,6 +32,9 @@ public class ArrayListDemo {
     }
     System.out.println("Sum Of The Numbers : " + sum);
     System.out.println("Max Element is : " + returnLargestElement(arrayList));
+    ArrayList<Integer> newArrayList = new ArrayList<>();
+    newArrayList.addAll(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+    printEvenNumbers(newArrayList);
   }
 
   public static Integer returnLargestElement(ArrayList<Integer> arrayList) {
@@ -41,6 +45,14 @@ public class ArrayListDemo {
       }
     }
     return max;
+  }
+
+  public static void printEvenNumbers(ArrayList<Integer> arrayList) {
+    for (Integer value : arrayList) {
+      if (value % 2 == 0) {
+        System.out.println(value);
+      }
+    }
   }
 }
 // NOTE: Difference between Array and ArrayList
