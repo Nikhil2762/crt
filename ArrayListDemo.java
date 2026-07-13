@@ -35,6 +35,7 @@ public class ArrayListDemo {
     ArrayList<Integer> newArrayList = new ArrayList<>();
     newArrayList.addAll(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
     printEvenNumbers(newArrayList);
+    reverseArrayList(newArrayList);
   }
 
   public static Integer returnLargestElement(ArrayList<Integer> arrayList) {
@@ -52,6 +53,17 @@ public class ArrayListDemo {
       if (value % 2 == 0) {
         System.out.println(value);
       }
+    }
+  }
+
+  public static void reverseArrayList(ArrayList<Integer> arrayList) {
+    ArrayList<Integer> arrayList2 = new ArrayList<>();
+    for (int i = arrayList.size() - 1; i >= 0; i--) {
+      arrayList2.add(arrayList.get(i));
+    }
+    System.out.println("Reversing A Array List :");
+    for (Integer value : arrayList2) {
+      System.out.println(value);
     }
   }
 }
