@@ -30,6 +30,17 @@ public class ArrayListDemo {
       System.out.println(value);
     }
     System.out.println("Sum Of The Numbers : " + sum);
+    System.out.println("Max Element is : " + returnLargestElement(arrayList));
+  }
+
+  public static Integer returnLargestElement(ArrayList<Integer> arrayList) {
+    Integer max = arrayList.get(0);
+    for (int i = 1; i < arrayList.size() - 1; i++) {
+      if (max < arrayList.get(i)) {
+        max = arrayList.get(i);
+      }
+    }
+    return max;
   }
 }
 // NOTE: Difference between Array and ArrayList
