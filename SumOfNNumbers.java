@@ -17,3 +17,4 @@ public class SumOfNNumbers {
     scanner.close();
   }
 }
+//Java program
