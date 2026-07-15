@@ -3,35 +3,39 @@ import java.util.List;
 
 public class ArrayListDemo {
   public static void main(String[] args) {
-    ArrayList<Integer> arrayList = new ArrayList<>();
-    System.out.println(arrayList);
-    // NOTE: Array List Add Method
-    arrayList.add(10);
-    arrayList.add(20);
-    arrayList.add(30);
-    arrayList.add(1, 100);
-    arrayList.addFirst(1000);
-    arrayList.addLast(1000000);
-    // NOTE: Unlike in array where you will get the memory reference of the array
-    // for array list you will get the values instead
-
-    // NOTE: Accessing ArrayList Elements
-    int index = arrayList.indexOf(10); // NOTE: This Returns the First Occurance of the element 10
-    System.out.println(index);
-    index = arrayList.get(arrayList.size() - 1); // NOTE: You need to pass index value to get the element at that index
-    arrayList.add(20);
-    index = arrayList.lastIndexOf(20); // NOTE: It Returns the Last Index of the element 20
-    System.out.println(index);
-    boolean result = arrayList.contains(10); // NOTE: Contains returns boolean value as the result
-    System.out.println(result);
-    System.out.println(arrayList);
-    int sum = 0;
-    for (int value : arrayList) {
-      sum += value;
-      System.out.println(value);
-    }
-    System.out.println("Sum Of The Numbers : " + sum);
-    System.out.println("Max Element is : " + returnLargestElement(arrayList));
+    // ArrayList<Integer> arrayList = new ArrayList<>();
+    // System.out.println(arrayList);
+    // // NOTE: Array List Add Method
+    // arrayList.add(10);
+    // arrayList.add(20);
+    // arrayList.add(30);
+    // arrayList.add(1, 100);
+    // arrayList.addFirst(1000);
+    // arrayList.addLast(1000000);
+    // // NOTE: Unlike in array where you will get the memory reference of the array
+    // // for array list you will get the values instead
+    //
+    // // NOTE: Accessing ArrayList Elements
+    // int index = arrayList.indexOf(10); // NOTE: This Returns the First Occurance
+    // of the element 10
+    // System.out.println(index);
+    // index = arrayList.get(arrayList.size() - 1); // NOTE: You need to pass index
+    // value to get the element at that index
+    // arrayList.add(20);
+    // index = arrayList.lastIndexOf(20); // NOTE: It Returns the Last Index of the
+    // element 20
+    // System.out.println(index);
+    // boolean result = arrayList.contains(10); // NOTE: Contains returns boolean
+    // value as the result
+    // System.out.println(result);
+    // System.out.println(arrayList);
+    // int sum = 0;
+    // for (int value : arrayList) {
+    // sum += value;
+    // System.out.println(value);
+    // }
+    // System.out.println("Sum Of The Numbers : " + sum);
+    // System.out.println("Max Element is : " + returnLargestElement(arrayList));
     ArrayList<Integer> newArrayList = new ArrayList<>();
     newArrayList.addAll(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
     printEvenNumbers(newArrayList);
