@@ -3,7 +3,7 @@ public class FrequencyInArrays {
     int[] arr = { 1, 2, 3, 1, 1, 1 };
     int freq = 0;
     for (int i = 0; i < arr.length; i++) {
-      if (arr[i] == 2) {
+      if (arr[i] == 1) {
         freq++;
       }
     }
