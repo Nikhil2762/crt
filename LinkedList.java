@@ -24,6 +24,7 @@ public class LinkedList {
     deleteByValue(head, 50);
     System.out.println("After deleting value 50:");
     display(head);
+    System.out.println("The Length Of The Linked List :" + sizeOfLinkedList(head));
   }
 
   private static void append(LinkedNode head, int value) {
@@ -106,5 +107,15 @@ public class LinkedList {
       current = current.pointer;
     }
     return false;
+  }
+
+  public static int sizeOfLinkedList(LinkedNode head) {
+    int count = 0;
+    LinkedNode current = head.pointer;
+    while (current != null) {
+      count += 1;
+      current = current.pointer;
+    }
+    return count;
   }
 }
