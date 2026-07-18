@@ -1,35 +1,26 @@
 public class LinkedList {
-
   public static void main(String[] args) {
     LinkedNode head = new LinkedNode(-1);
-
     for (int i = 1; i <= 10; i++) {
       append(head, i * 10);
     }
-
     System.out.println("Initial list:");
     display(head);
-
     addFirst(head, 1000);
     System.out.println("After adding 1000 at the beginning:");
     display(head);
-
     System.out.println("Adding 2000 at the second place:");
     insertAfter(head, 1000, 2000);
     display(head);
-
     System.out.println("Inserting 69 at index 5:");
     insertAt(head, 5, 69);
     display(head);
-
     deleteFirst(head);
     System.out.println("After deleting first element:");
     display(head);
-
     deleteLast(head);
     System.out.println("After deleting last element:");
     display(head);
-
     deleteByValue(head, 50);
     System.out.println("After deleting value 50:");
     display(head);
@@ -96,7 +87,8 @@ public class LinkedList {
 
   private static void deleteLast(LinkedNode head) {
     LinkedNode current = head;
-    if (current.pointer == null) return;
+    if (current.pointer == null)
+      return;
 
     while (current.pointer.pointer != null) {
       current = current.pointer;
