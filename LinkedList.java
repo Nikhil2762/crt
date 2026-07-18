@@ -74,5 +74,20 @@ public class LinkedList {
       System.out.println(current.value);
       current = current.pointer;
     }
+    // NOTE: Deleting the last element
+    current = head;
+    LinkedNode previous = null;
+    System.out.println("Deleting The Last Element");
+    while (current.pointer != null) {
+      previous = current;
+      current = current.pointer;
+    }
+    previous.pointer = null;
+
+    current = head.pointer;
+    while (current != null) {
+      System.out.println(current.value);
+      current = current.pointer;
+    }
   }
 }
