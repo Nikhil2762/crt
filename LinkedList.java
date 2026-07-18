@@ -89,5 +89,22 @@ public class LinkedList {
       System.out.println(current.value);
       current = current.pointer;
     }
+
+    // NOTE: Deleting a Specific Value ;
+    current = head;
+    previous = null;
+    System.out.println("Deleting The Value 50");
+    while(current != null){
+        if(current.value == 50){
+            previous.pointer = current.pointer;
+        }
+        previous = current;
+        current = current.pointer;
+    }
+    current = head.pointer;
+    while(current != null){
+        System.out.println(current.value);
+        current = current.pointer;
+    }
   }
 }
