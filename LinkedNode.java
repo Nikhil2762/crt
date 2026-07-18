@@ -1,9 +1,9 @@
 public class LinkedNode {
-  int value;
-  LinkedNode pointer;
+  public int value;
+  public LinkedNode pointer;
 
   // NOTE: A New Node is created and the next address is set to null
-  LinkedNode(int value) {
+  public LinkedNode(int value) {
     this.value = value;
     this.pointer = null;
   }
