@@ -45,5 +45,26 @@ public class LinkedList {
       System.out.println(current.value);
       current = current.pointer;
     }
+    current = head;
+    LinkedNode next = current.pointer;
+    i = 1;
+    // NOTE: Inserting At the Fifth Place
+    System.out.println("Adding Element At the Fifth Index ");
+    while (current != null) {
+      if (i == 5) {
+        LinkedNode newNode = new LinkedNode(69);
+        current.pointer = newNode;
+        newNode.pointer = next;
+        break;
+      }
+      current = current.pointer;
+      next = current.pointer;
+      i += 1;
+    }
+    current = head.pointer;
+    while (current != null) {
+      System.out.println(current.value);
+      current = current.pointer;
+    }
   }
 }
