@@ -66,5 +66,13 @@ public class LinkedList {
       System.out.println(current.value);
       current = current.pointer;
     }
+    // NOTE: Deleting At The First Position
+    head.pointer = head.pointer.pointer;
+    current = head.pointer;
+    System.out.println("Deleting First Element");
+    while (current != null) {
+      System.out.println(current.value);
+      current = current.pointer;
+    }
   }
 }
