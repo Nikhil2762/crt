@@ -5,6 +5,7 @@ public class StackInJava {
     stackArray.push(10);
     stackArray.push(20);
     stackArray.pop();
+    stackArray.push(11);
     stackArray.display();
   }
 }

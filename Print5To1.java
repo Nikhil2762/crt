@@ -7,6 +7,6 @@ public class Print5To1 {
   }
 
   public static void main(String[] args) {
-    recursion(5);
+    recursion(10);
   }
 }
