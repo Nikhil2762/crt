@@ -31,4 +31,21 @@ public class StackArray {
       System.out.println(this.arr[i]);
     }
   }
+
+  public int peek() {
+    return this.arr[top];
+  }
+
+  public boolean isEmpty() {
+    if (this.top == -1)
+      return true;
+    return false;
+  }
+
+  public boolean isFull() {
+    if (this.top == this.size) {
+      return true;
+    }
+    return false;
+  }
 }

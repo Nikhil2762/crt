@@ -7,5 +7,7 @@ public class StackInJava {
     stackArray.pop();
     stackArray.push(11);
     stackArray.display();
+    System.out.println(stackArray.peek());
+    System.out.println("Is Stack Empty : " + stackArray.isEmpty());
   }
 }
