@@ -10,7 +10,8 @@ public class DequeueInJava {
     addValue(40); 
     display();
     System.out.println("Head of The Array : " + peek());
-
+    System.out.println("Is Dequeue Empty : "+isEmpty());
+    System.out.println("Is Dequeue Full : "+isFull());
   }
   public static void addValue(int val){
     if(tail == size - 1){
@@ -28,5 +29,13 @@ public class DequeueInJava {
   }
   public static int peek(){
     return arr[head];
+  }
+  public static boolean isEmpty(){
+    if(head == tail)return true;
+    return false;
+  }
+  public static boolean isFull(){
+    if(tail == size - 1)return true;
+    return false;
   }
 }
