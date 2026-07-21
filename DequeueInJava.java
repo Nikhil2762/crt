@@ -9,6 +9,7 @@ public class DequeueInJava {
     addValue(30); 
     addValue(40); 
     display();
+    System.out.println("Head of The Array : " + peek());
 
   }
   public static void addValue(int val){
@@ -24,5 +25,8 @@ public class DequeueInJava {
     for(int i = head;i<tail;i++){
       System.out.println(arr[i]);
     }
+  }
+  public static int peek(){
+    return arr[head];
   }
 }
