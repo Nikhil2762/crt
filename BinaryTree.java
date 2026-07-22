@@ -20,4 +20,9 @@ public class BinaryTree {
     System.out.println(root.value);
     inorder(root.right);
   }
+  public static void main(String[] args) {
+    TreeNode root = createNode();
+    System.out.println("In Order Travesal : ");
+    inorder(root);
+  }
 }
