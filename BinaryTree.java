@@ -12,4 +12,12 @@ public class BinaryTree {
     scanner.close();
     return root;
   }
+  public static void inorder(TreeNode root){
+    if(root == null){
+      return;
+    }
+    inorder(root.left);
+    System.out.println(root.value);
+    inorder(root.right);
+  }
 }
